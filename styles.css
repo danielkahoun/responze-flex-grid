@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Lato&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+main.container {
+    display: grid;
+    grid-template-areas:
+    'navbar'
+    'header'
+    'right'
+    'menu'
+    'main'
+    'footer';
+    gap: 10px;
+    margin: 0 6%;
+}
+
+main.container .navbar {
+    grid-area: navbar;
+}
+
+main.container .header {
+    grid-area: header;
+}
+
+main.container .right {
+    grid-area: right;
+}
+
+main.container .menu {
+    grid-area: menu;
+}
+
+main.container .main {
+    grid-area: main;
+}
+
+main.container .footer {
+    grid-area: footer;
+}
+
+.mainArticle {
+    background: url("https://d15-a.sdn.cz/d_15/c_img_QI_r/4Bl4e.jpeg?fl=cro,0,1,1275,717%7Cres,1200,,1%7Cwebp,75");
+    background-size: cover;
+    color: white;
+    padding: 40px;
+}
+
+.mainArticle h1 {
+    font-family: 'Abyssinica SIL', serif;
+    font-size: 30px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.article {
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.main .article img {
+    width: 100%;
+    height: auto;
+}
+
+.main .article h1 {
+    font-family: 'Abyssinica SIL', serif;
+    font-size: 26px;
+    margin: 0;
+}
+
+.main .article p {
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.menu .article img {
+    width: 100%;
+    height: auto;
+}
+
+.menu .article h1 {
+    font-family: 'Abyssinica SIL', serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.menu .article p {
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.right .article img {
+    width: 100%;
+    height: auto;
+}
+
+.right .article h1 {
+    font-family: 'Abyssinica SIL', serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+.right .article p {
+    margin-top: 0;
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .mainArticle { padding: 200px 40px 40px 40px; }
+
+    .main .article img {
+        width: 200px;
+        height: auto;
+    }
+
+    .menu .article img {
+        width: 150px;
+        height: auto;
+    }
+
+    .right .article img {
+        width: 160px;
+        height: auto;
+    }
+
+    .flex {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main.container {
+        grid-template-areas:
+        'navbar navbar navbar navbar navbar navbar'
+        'header header header header right right'
+        'menu menu main main main main'
+        'footer footer footer footer footer footer';
+        margin: 0 6%;
+    }
+}
+
